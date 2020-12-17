@@ -6,7 +6,7 @@ class BaseClass(ABC):
     object_list = list()
 
     def __init__(self, *args, **kwargs):
-        self._id = self.generate_id()
+        self.id = self.generate_id()
         self.store(self)
         super().__init__(*args, **kwargs)
 
